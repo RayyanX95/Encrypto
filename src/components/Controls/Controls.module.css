@@ -1,0 +1,30 @@
+.Controls{
+    padding: 0;
+}
+.Controls button {
+    font-size: 1.3rem;
+}
+.Controls button:disabled {
+    background-color: #AC9980;
+    border: 1px solid #7E7365;
+    color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+@media(min-width: 499px) and (max-width: 767px) {
+    .Controls button:first-of-type{
+        margin-left: 60px;
+    }
+    .Controls button {
+        font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 499px) {
+    .Controls button:first-of-type{
+        margin-left: 30px;
+    }
+    .Controls button {
+        font-size: 1.1rem;
+    }
+  }

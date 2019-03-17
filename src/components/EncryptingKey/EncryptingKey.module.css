@@ -1,0 +1,22 @@
+.KeyMaindiv {
+    font-size: inherit;
+}
+.KeyMaindiv span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.KeyMaindiv input {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+.Txt {
+    background-color: var(--mainBlue);
+    color: aliceblue;
+}
+
+
+@media (max-width: 991px) {
+    .KeyMaindiv {
+       margin: auto;
+    } 
+}
