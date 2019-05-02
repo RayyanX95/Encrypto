@@ -20,6 +20,15 @@
 .Logo {
     height: 80%;
 }
+.Logo a {
+    color: #CCC;
+    text-decoration: none;
+}
+.Logo a:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
 @media(max-width: 499px) {
     .DesktopOnly {
         display: none;

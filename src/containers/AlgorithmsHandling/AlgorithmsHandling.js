@@ -94,7 +94,8 @@ class EncryptAlgorithms extends Component {
         });
     }
 
-    resethandler = () => {
+    resethandler  ()  {
+        console.log('from reste: ', this);
         INPUT_TEXT = ''
         this.setState({
             reset: true,
@@ -960,7 +961,7 @@ class EncryptAlgorithms extends Component {
                     disableEnc={this.state.disableEncryptBtn}
                     disableDec={this.state.disableDecryptBtn}
                     disableReset={this.state.disableResetBtn}
-                    reset={this.resethandler}
+                    reset={this.resethandler.bind(this)}
                     showModal={this.state.showModal}
                     closeModal={this.closeModalhandler}
                     encryptedTxt={passedTxt} />

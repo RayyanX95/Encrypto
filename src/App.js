@@ -7,19 +7,22 @@ import AlgorithmsHandling from "./containers/AlgorithmsHandling/AlgorithmsHandli
 import HowToUse from "./components/HowToUse/HowToUse";
 import "./App.css";
 
+
 class App extends Component {
   render() {
     return (
+
+      // <Navbar />
       <Layout>
-        <HashRouter>
+        {/* <HashRouter> */}
           <Switch>
-            <Route path="/enc-dec/#how-to-use" component={HowToUse} />
-            <Route path="/enc-dec/#about" component={AlgorithmsHandling} />
-            <Route path="/enc-dec/#contact" component={AlgorithmsHandling} />
-            <Route path="/enc-dec/#" exact component={AlgorithmsHandling} />
+            <Route path="/how-to-use" component={HowToUse} />
+            <Route path="/about" component={AlgorithmsHandling} />
+            <Route path="/contact" component={AlgorithmsHandling} />
+            <Route path="/" exact component={AlgorithmsHandling} />
             <Route component={HowToUse} />
           </Switch>
-        </HashRouter>
+        {/* </HashRouter> */}
       </Layout>
     );
   }

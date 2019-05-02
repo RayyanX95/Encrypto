@@ -12,6 +12,7 @@ export default class Layout extends Component {
     this.setState({ showSideDrawer: false });
   };
   sideDrawerToggleHandler = () => {
+    
     this.setState(prevSate => {
       return { showSideDrawer: !this.state.showSideDrawer };
     });
@@ -19,6 +20,7 @@ export default class Layout extends Component {
   render() {
     return (
       <React.Fragment>
+        {/* <Navbar /> */}
         <Toolbar toggleSideDrawer={this.sideDrawerToggleHandler} />
         <SideDrawer
           open={this.state.showSideDrawer}
