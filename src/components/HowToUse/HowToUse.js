@@ -2,11 +2,11 @@ import React from "react";
 
 const HowToUse = () => {
   return (
-    <div className="container p-5 pt-15 bg-white">
+    <div className="container mt-5 p-5 pt-15 bg-white">
       <div className="row p-20">
         <article>
-          <h1>How to use:</h1>
-          <p className='col-10 mx-auto text-black-50'>
+          <h1 className='text-muted lead text-center font-weight-bold'>How to use</h1>
+          <p className='col-10 mx-auto text-muted lead'>
             For faster mobile-friendly development, use responsive display
             classes for showing and hiding elements by device. Avoid creating
             entirely different versions of the same site, instead hide elements
