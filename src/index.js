@@ -7,9 +7,7 @@ import registerServiceWorker from "./registerServiceWorker";
 
 const app = (
   <BrowserRouter>
-    <HashRouter>
       <App />
-    </HashRouter>
   </BrowserRouter>
 );
 ReactDOM.render(app, document.getElementById("root"));
