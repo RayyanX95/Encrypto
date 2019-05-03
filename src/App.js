@@ -14,10 +14,10 @@ class App extends Component {
       <Layout>
         {/* <HashRouter> */}
         <Switch>
+            <Route path="/" exact component={AlgorithmsHandling} />
             <Route path="/how-to-use" component={HowToUse} />
             <Route path="/about" component={AlgorithmsHandling} />
             <Route path="/contact" component={AlgorithmsHandling} />
-            <Route path="/" exact component={AlgorithmsHandling} />
             <Route component={HowToUse} />
         </Switch>
         {/* </HashRouter> */}

@@ -15,7 +15,7 @@ class Modal extends Component {
                     show={this.props.show}
                     clicked={this.props.modalClosed} />
                     
-                <div className={classes.Modal}
+                <div className={classes.Modal + 'content-justify'}
                     style={{
                         transform: this.props.show ? 'translateY(0)' : 'translateY(-50vh)',
                         opacity: this.props.show ? '1' : '0'
