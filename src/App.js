@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter, Route, Switch, Router } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Layout from "./containers/Layout/Layout";
@@ -12,7 +12,6 @@ class App extends Component {
     return (
       // <Navbar />
       <Layout>
-        {/* <HashRouter> */}
         <Switch>
             <Route path="/" exact component={AlgorithmsHandling} />
             <Route path="/how-to-use" component={HowToUse} />
@@ -20,7 +19,6 @@ class App extends Component {
             <Route path="/contact" component={AlgorithmsHandling} />
             <Route component={HowToUse} />
         </Switch>
-        {/* </HashRouter> */}
       </Layout>
     );
   }

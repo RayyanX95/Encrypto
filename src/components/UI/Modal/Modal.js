@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import classes from './Modal.module.css';
+// import classes from './Modal.module.css';
+import './modal.css';
 import Backdrop from '../Backdrop/Backdrop';
 
 class Modal extends Component {
@@ -15,7 +16,7 @@ class Modal extends Component {
                     show={this.props.show}
                     clicked={this.props.modalClosed} />
                     
-                <div className={classes.Modal + 'content-justify'}
+                <div className='Modal'
                     style={{
                         transform: this.props.show ? 'translateY(0)' : 'translateY(-50vh)',
                         opacity: this.props.show ? '1' : '0'
