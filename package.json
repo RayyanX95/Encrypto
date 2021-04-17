@@ -1,8 +1,8 @@
 {
-  "name": "enc-dec",
+  "name": "encrypto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rayyan995.github.io/enc-dec/",
+  "homepage": "https://rayyanx95.github.io/encrypto/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "custom-react-scripts": "0.2.2",
